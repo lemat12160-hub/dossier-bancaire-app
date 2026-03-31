@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap');
+
+:root {
+  --background: 222 20% 10%;
+  --foreground: 210 20% 92%;
+  --card: 222 20% 13%;
+  --card-foreground: 210 20% 92%;
+  --border: 222 15% 22%;
+  --muted: 222 15% 18%;
+  --muted-foreground: 215 15% 55%;
+  --primary: 210 90% 60%;
+  --primary-foreground: 0 0% 100%;
+  --success: 152 60% 48%;
+  --accent: 38 92% 58%;
+  --destructive: 0 72% 58%;
+  --input: 222 15% 18%;
+  --ring: 210 90% 60%;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  min-height: 100vh;
+}
+
+.font-heading { font-family: 'DM Sans', sans-serif; }
+.font-mono { font-family: 'DM Mono', monospace; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: hsl(var(--muted)); }
+::-webkit-scrollbar-thumb { background: hsl(var(--border)); border-radius: 3px; }
+
+/* Tailwind theme overrides */
+@theme {
+  --color-background: hsl(222 20% 10%);
+  --color-foreground: hsl(210 20% 92%);
+  --color-card: hsl(222 20% 13%);
+  --color-border: hsl(222 15% 22%);
+  --color-muted: hsl(222 15% 18%);
+  --color-muted-foreground: hsl(215 15% 55%);
+  --color-primary: hsl(210 90% 60%);
+  --color-primary-foreground: hsl(0 0% 100%);
+  --color-success: hsl(152 60% 48%);
+  --color-accent: hsl(38 92% 58%);
+  --color-destructive: hsl(0 72% 58%);
+  --font-heading: 'DM Sans', sans-serif;
+}
